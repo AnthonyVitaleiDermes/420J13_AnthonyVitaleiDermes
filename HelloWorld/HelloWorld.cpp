@@ -29,13 +29,36 @@ public:
 
 int main()
 {    
-	cout << "Welcome to the Login Page ! ";    //easy display message
-	cout << "Enter Account ID ";
+	int ID;
+	string UserName;
+	string Password;
 
 
+	cout << "Welcome to the Login Page\n ! ";    //easy display message
+	cout << "Enter Account ID\n ";
+	cin >> ID;
+	cin.ignore();  
+
+	//entering userName
+	cout << "Enter User Name: ";
+	getline(cin, UserName);
 
 
+	//Basically Copy paste but Password instead of user name
+	cout << "Enter Password: ";
+	getline(cin, Password);
 
+
+	UsersAccount user(ID, UserName, Password);
+
+	//brings up the Login
+	cout << "\nLogin:\n";
+
+
+	while (true)
+	{
+
+	}
 
 }
 
