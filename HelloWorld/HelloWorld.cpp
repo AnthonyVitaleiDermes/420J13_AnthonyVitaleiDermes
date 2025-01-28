@@ -2,10 +2,30 @@
 //
 #include <string>
 #include <iostream> 
+using namespace std;
+
+class UsersAccount 
+{
+private:
+
+	// my variables
+
+	int ID;
+	string UserName;
+	string Password;
+
+public:
+
+	//Constructor
+	UsersAccount(int id, const string& username, const string& pwd) : ID(id), UserName(username), Password (pwd){}
+
+
+};
+
 
 int main()
 {
-	int ID;
+	
 
 
 }
