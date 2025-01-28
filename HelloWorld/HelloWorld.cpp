@@ -19,13 +19,22 @@ public:
 	//Constructor
 	UsersAccount(int id, const string& username, const string& pwd) : ID(id), UserName(username), Password (pwd){}
 
-
+	//Login
+	bool Login(const string CreatedUserName, const string CreatedPassword) //const ???
+	{
+		return (CreatedUserName == UserName && CreatedPassword == Password);
+	}
 };
 
 
 int main()
-{
-	
+{    
+	cout << "Welcome to the Login Page ! ";    //easy display message
+	cout << "Enter Account ID ";
+
+
+
+
 
 
 }
