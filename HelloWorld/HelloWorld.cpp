@@ -57,9 +57,32 @@ int main()
 
 	while (true)
 	{
+		string CreatedUserName, CreatedPassword;
 
+
+		//UserName Login
+		cout << "Enter Username : ";
+		getline(cin, CreatedUserName);
+
+		//copy paste but for Password instead
+		cout << "Enter Password : ";
+		getline(cin, CreatedPassword);
+
+
+
+		if (user.Login(CreatedUserName, CreatedPassword))  //
+		{
+			cout << "Login Succesful !\n";
+			cout << "Account ID:" << user.getID() << "\n";
+				break;
+		}
+		else
+		{
+
+			cout << "Login Error, Invalid Username or Password. Try again.\n";
+		}
 	}
-
+	return 0;
 }
 
 
